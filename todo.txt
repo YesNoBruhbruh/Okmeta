@@ -1,0 +1,8 @@
+TODO
+
+Database:
+- Add mongoDB and redis as database options
+
+Event:
+- Add abstraction class for events
+- Add custom event handlers

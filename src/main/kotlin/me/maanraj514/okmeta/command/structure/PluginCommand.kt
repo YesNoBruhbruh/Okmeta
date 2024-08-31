@@ -1,4 +1,4 @@
-package me.maanraj514.okmeta.command
+package me.maanraj514.okmeta.command.structure
 
 import org.bukkit.command.Command
 import org.bukkit.command.CommandSender

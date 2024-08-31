@@ -1,4 +1,4 @@
-package me.maanraj514.okmeta.command
+package me.maanraj514.okmeta.command.structure
 
 @Target(AnnotationTarget.CLASS)
 @Retention(AnnotationRetention.RUNTIME)

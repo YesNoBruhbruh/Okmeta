@@ -1,5 +1,7 @@
 package me.maanraj514.okmeta.command
 
+import me.maanraj514.okmeta.command.structure.CommandList
+import me.maanraj514.okmeta.command.structure.PluginCommand
 import org.bukkit.Bukkit
 
 class CommandManager {

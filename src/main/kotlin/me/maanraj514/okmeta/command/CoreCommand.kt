@@ -1,5 +1,7 @@
 package me.maanraj514.okmeta.command
 
+import me.maanraj514.okmeta.command.structure.CommandList
+import me.maanraj514.okmeta.command.structure.PluginCommand
 import me.maanraj514.okmeta.utils.sendColorizedMessage
 import org.bukkit.command.Command
 import org.bukkit.command.CommandSender
