@@ -1,6 +1,5 @@
 package me.maanraj514.okmeta.command
 
-import org.bukkit.command.Command
 import org.bukkit.command.CommandSender
 
 @FunctionalInterface

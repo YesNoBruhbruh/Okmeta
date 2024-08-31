@@ -2,7 +2,7 @@ package me.maanraj514.okmeta.command
 
 import org.bukkit.Bukkit
 
-class CommandManager() {
+class CommandManager {
 
     fun createCoreCommand(
         commandName: String,
