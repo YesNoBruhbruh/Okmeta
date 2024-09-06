@@ -14,6 +14,7 @@ repositories {
 
 dependencies {
     paperweight.paperDevBundle("1.21.1-R0.1-SNAPSHOT")
+    implementation("org.mongodb:mongodb-driver-kotlin-sync:5.1.2")
 }
 
 kotlin {

@@ -1,8 +1,14 @@
 TODO
 
 Database:
-- Add mongoDB and redis as database options
+- Add MongoDB support
+- Add Redis support
+
+User:
+- Make user class
+- Fill it with bare bones
 
 Event:
 - Add abstraction class for events
 - Add custom event handlers
+- Add default events (e.g. UserJoinEvent, UserQuitEvent, etc.)

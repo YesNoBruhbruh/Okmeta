@@ -6,7 +6,7 @@ import java.sql.Connection
 import java.sql.DriverManager
 import java.sql.SQLException
 
-class H2Database(path: String, private val connectedCallback: ConnectedCallback) : Database {
+class H2Database(path: String, private val connectedCallback: ConnectedCallback) : SQLDatabase {
 
     private var connection: Connection
 
