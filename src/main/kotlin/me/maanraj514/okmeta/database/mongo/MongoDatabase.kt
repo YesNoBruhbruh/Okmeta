@@ -6,13 +6,12 @@ import com.mongodb.ServerApi
 import com.mongodb.ServerApiVersion
 import com.mongodb.client.MongoClient
 import com.mongodb.client.MongoClients
-import me.maanraj514.okmeta.database.ConnectedCallback
 
 class MongoDatabase(
-    private val userName: String,
-    private val password: String,
-    private val host: String,
-    private val connectedCallback: ConnectedCallback
+    userName: String,
+    password: String,
+    host: String,
+    private val connectedCallback: MongoConnectedCallback
 ) : IMongoDatabase {
 
     private var mongoClient: MongoClient

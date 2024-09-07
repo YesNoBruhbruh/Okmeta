@@ -1,21 +1,20 @@
-package me.maanraj514.okmeta.database.builder
+package me.maanraj514.okmeta.database.sql.builder
 
 import java.sql.Connection
 import java.sql.SQLException
 
-
-class SQLTableBuilder(private val name: String) {
+class SQLTableBuilder(name: String) {
 
     private val builder = StringBuilder()
 
     private var primaryKey = false
 
     init {
-        builder.append("CREATE TABLE IF NOT EXISTS ").append(name).append(" (");
+        builder.append("CREATE TABLE IF NOT EXISTS ").append(name).append(" (")
     }
 
     fun addField(name: String, type: DataType, length: Int) : SQLTableBuilder {
-        builder.append(name).append(" ").append(type.name).append("(").append(length).append("),");
+        builder.append(name).append(" ").append(type.name).append("(").append(length).append("),")
         return this
     }
 
@@ -35,7 +34,7 @@ class SQLTableBuilder(private val name: String) {
         }
     }
 
-    fun getCommand(): String {
+    private fun getCommand(): String {
         if (!primaryKey) {
             throw NullPointerException("No Primary key specified")
         }

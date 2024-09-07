@@ -1,7 +1,5 @@
 package me.maanraj514.okmeta.database.sql
 
-import me.maanraj514.okmeta.database.ConnectedCallback
-import me.maanraj514.okmeta.database.Database
 import java.sql.Connection
 import java.sql.DriverManager
 import java.sql.SQLException
@@ -13,7 +11,7 @@ class MySQLDatabase(
     username: String,
     database: String,
     useSSL: Boolean,
-    private val connectedCallback: ConnectedCallback
+    private val connectedCallback: SQLConnectedCallback
 ) :
     SQLDatabase {
 

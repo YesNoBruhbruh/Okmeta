@@ -1,12 +1,10 @@
 package me.maanraj514.okmeta.database.sql
 
-import me.maanraj514.okmeta.database.ConnectedCallback
-import me.maanraj514.okmeta.database.Database
 import java.sql.Connection
 import java.sql.DriverManager
 import java.sql.SQLException
 
-class SQLiteDatabase(path: String, private val connectedCallback: ConnectedCallback) : SQLDatabase {
+class SQLiteDatabase(path: String, private val connectedCallback: SQLConnectedCallback) : SQLDatabase {
 
     private var connection: Connection
 

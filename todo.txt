@@ -1,7 +1,6 @@
 TODO
 
 Database:
-- Add MongoDB support
 - Add Redis support
 
 User:
